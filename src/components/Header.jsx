@@ -49,8 +49,8 @@ class Header extends Component {
 
    renderTopPortion() {
    	return (
-   		<div id="top-nav" className="flex-container" onClick={() => this.props.changePage("home")}>
-            <div id="title-box">
+   		<div id="top-nav" className="flex-container">
+            <div id="title-box" onClick={() => this.props.changePage("home")}>
 			     
                  <img id="logo" src={logo} />
                  <h1> {this.props.title} </h1>

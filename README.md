@@ -3,7 +3,7 @@
 ## Link to page
 
 My work can be found at:
-https://albertadevor.github.io/archindex/
+https://albertadevor.github.io/archindex_engn1010/
 
 You can also run it through 
 $ npm install
