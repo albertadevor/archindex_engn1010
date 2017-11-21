@@ -1,0 +1,60 @@
+#title-box {
+	color: #fff;
+	display: flex;
+	align-content: center;
+	align-items: center;
+    justify-content: space-around;
+    width: 16em;
+    font-size: 1.5em;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+p {
+	font-size: 1.2em;
+}
+
+.headerOptTxt {
+	margin-right: 3px;
+	margin-left: 3px;
+}
+
+.headerOptSpan {
+	display: flex;
+	margin:0;
+	margin-top: 1em;
+}
+
+#top-nav{
+	justify-content: center;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+}
+
+#logo {
+	width: 3em;
+	height: 3.5em;
+}
+
+header {
+	background: #f2c3b0;
+	width: 100%;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header div {
+	color: #7481b0;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#header-options {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	width: 350px;
+}
