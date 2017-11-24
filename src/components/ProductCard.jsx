@@ -10,8 +10,7 @@ class ProductCard extends Component {
 		    	<img src = {this.props.img} alt = {this.props.alt}/>
 		    	<h2>{this.props.name}</h2>
 		    	<div className="card-bottom">
-					<h3>${this.props.price}</h3>
-					<h3>{this.props.type}</h3>
+					<h3>Starting at ${this.props.price}</h3>
 		    	</div>
 		    </div>
 	    );

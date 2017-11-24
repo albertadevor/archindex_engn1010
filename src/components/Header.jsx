@@ -91,9 +91,9 @@ class Header extends Component {
 					{this.renderHeaderOptions()}
 				</div>
 								
-				<div id = "login-signup" className= "flex-container flex-right-item">
+				<p id = "login-signup" className= "flex-container flex-right-item">
 				 Login | Sign Up 
-				</div>
+				</p>
 			</div>
    		)
    }

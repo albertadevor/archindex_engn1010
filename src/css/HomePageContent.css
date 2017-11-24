@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+#homePageContent h2 {
+	font-size: 3em;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+}
+
+.blueTitle {
+	color: blue;
+}
