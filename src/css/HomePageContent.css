@@ -1,11 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
 
-#homePageContent h2 {
-	font-size: 3em;
+#caroText h2 {
+	font-size: 5em;
 	font-family: 'Roboto', sans-serif;
-	font-weight: 500;
+	font-weight: 800;
 }
 
-.blueTitle {
-	color: blue;
+#headerCaro h2 {
+	-webkit-text-stroke-width: 3px;
+   	-webkit-text-stroke-color: black;
+   	color: white;
+}
+
+#caroText {
+	padding-top:60px;
+	padding-bottom: 60px;
+}
+
+#headerCaro {
+	padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+#homePageContent {
+	background-color: rgb(224,231,236);
+}
+
+#homePageContent img{
+	cursor: pointer;
 }
