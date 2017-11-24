@@ -1,6 +1,6 @@
 {
-  "short_name": "ArchIndex",
-  "name": "ArchIndex",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "favicon.ico",
