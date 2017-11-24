@@ -131,7 +131,7 @@ class SortedFilteredProductListing extends Component {
                   produce), filtering the content to match the search word, then
                   passing the filtered produce into the List component.
                 */}
-               <ProductList items={this.filterAndSortProducts()} />
+               <ProductList items={this.filterAndSortProducts()} changePage={this.props.changePage}/>
            </div>
         );
    }

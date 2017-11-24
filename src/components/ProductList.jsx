@@ -9,7 +9,8 @@ class ProductList extends Component {
 	    const items =  this.props.items.map(item => {
             return <ProductCard key={item.name} 
             	name={item.name} price={item.price} 
-            	img={item.img} alt={item.alt} type={item.type}/>
+            	img={item.img} alt={item.alt} type={item.type}
+                changePage={this.props.changePage}/>
         });
         return items;
     }

@@ -52,7 +52,7 @@ class Header extends Component {
    		<div id="top-nav" className="flex-container">
             <div id="title-box" onClick={() => this.props.changePage("home")}>
 			     
-                 <img id="logo" src={logo} />
+                 <img id="logo" src={logo} alt="logo"/>
                  <h1> {this.props.title} </h1>
             </div>
             <div className="search-div">

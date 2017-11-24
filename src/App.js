@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from './components/Header.jsx'
 import SortedFilteredProductListing from './components/SortedFilteredProductListing.jsx';
 import HomePageContent from './components/HomePageContent.jsx';
+import ProductPage from './components/ProductPage.jsx';
 import './css/App.css';
 
 class App extends Component {
@@ -9,6 +10,9 @@ class App extends Component {
 		super();
        	this.state = {
        		currentPage: "home",
+       		currProductName: "",
+       		currProductImage: "",
+       		currProductAlt: "",
        		products: [
 			{name: "Pink Marble", 
 				img: require('./img/pink_marble.jpg'),
@@ -87,14 +91,32 @@ class App extends Component {
        	this.changePage = this.changePage.bind(this);
 	}
 
-	changePage(pageName) {
+	changePage(pageName, optName, optImg, optAlt) {
+		optName = optName || "";
+	  	optImg = optImg || "";
+		optAlt = optAlt || "";
 		this.setState({currentPage: pageName});
+
+		if(pageName==="specific-product") {
+			this.setState({currProductName: optName});
+			this.setState({currProductImg: optImg});
+			this.setState({currProductAlt: optAlt});
+		}
 	}
 
 	mainContent() {
+		console.log(this.state.currentPage);
 		if(this.state.currentPage == "product") {
-			return(<SortedFilteredProductListing items={this.state.products} />)
+			return(<SortedFilteredProductListing items={this.state.products} 
+				changePage={this.changePage}/>)
 		}
+		if(this.state.currentPage == "specific-product") {
+			return(<ProductPage name={this.state.currProductName} 
+				img={this.state.currProductImg}
+				alt={this.state.currProductAlt}
+				changePage={this.changePage}/>)
+		}
+
 		return(<HomePageContent changePage={this.changePage} />)
 	}
 

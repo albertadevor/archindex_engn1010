@@ -6,7 +6,9 @@ class ProductCard extends Component {
 
     render() {
 	    return (
-		    <div className="card" key={this.props.name}>
+		    <div className="card" key={this.props.name} 
+		    onClick={() => this.props.changePage("specific-product", 
+		    	this.props.name, this.props.img, this.props.alt)}>
 		    	<img src = {this.props.img} alt = {this.props.alt}/>
 		    	<h2>{this.props.name}</h2>
 		    	<div className="card-bottom">

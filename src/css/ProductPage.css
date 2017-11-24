@@ -1,0 +1,31 @@
+.material {
+	width:  100%;
+	height: 200px;
+	overflow: hidden;
+}
+
+.product-page {
+	padding: 50px;
+	background-color: rgb(224,231,236);
+	display: flex;
+	flex-flow: column wrap;
+    align-items: flex-start;
+}
+
+.product-page h2{
+	font-size: 3em;
+	font-weight: 600;
+}
+
+.product-page h3{
+	margin-top: 30px;
+	font-size: 1.5em;
+	font-weight: 600;
+}
+.product-page p{
+	text-align: left;
+}
+
+#back {
+	margin-bottom: 50px;
+}

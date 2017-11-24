@@ -29,3 +29,8 @@
 #homePageContent img{
 	cursor: pointer;
 }
+
+.footer-ask {
+	width:70%;
+	padding: 40px;
+}
