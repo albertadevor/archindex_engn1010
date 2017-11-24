@@ -2,7 +2,7 @@
   "name": "archindex_engn1010",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://archindex.org",
+  "homepage": "https://albertadevor.github.io/archindex_engn1010",
   "dependencies": {
     "gh-pages": "^1.0.0",
     "react": "^15.6.2",
